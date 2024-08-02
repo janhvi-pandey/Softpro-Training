@@ -1,0 +1,44 @@
+                                                        DATABASE TECHNICAL TASK-02 
+
+Q2.1: In mydb database create a table "customer" with following structure:
+  
+Ans: For creating database:
+     CREATE DATABASE mydb;
+     
+     For using databse:
+     USE mydb;
+
+     For creating table customer:
+     CREATE TABLE customer (
+     cust_id INT,
+     name VARCHAR(50),
+     address VARCHAR(500)
+     );
+
+
+Q2.2: Do following operations and customer table:-
+i. Add a new column with name connect_date with datatype date.
+Ans: ALTER TABLE customer
+     ADD COLUMN connect_date DATE;
+
+ii. Drop column connect_date.
+Ans: ALTER TABLE customer
+     DROP COLUMN connect_date;
+
+iii.Add primary key on cust_id column.
+Ans: ALTER TABLE customer
+     ADD PRIMARY KEY (cust_id);
+
+
+iv. Add a new column connect_date with datatype date after name column.
+Ans: ALTER TABLE customer
+     ADD COLUMN connect_date DATE AFTER name;
+
+
+Q2.3:Create a table with name "orders" with following structure:-
+Ans: CREATE TABLE orders (
+     pid INT PRIMARY KEY,
+     pname VARCHAR(50),
+     cust_id INT,
+     FOREIGN KEY (cust_id) REFERENCES customer(cust_id)
+);

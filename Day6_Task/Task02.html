@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flag-Task</title>
+    <style>
+        .container{
+            height: 90vh;
+            width: 40vw;
+        }
+        .flag{
+            position: relative;
+            height: 75%;
+            width: 90%;
+            border: 5px solid #B97A57;
+        }
+        .color{
+            height: 50px;
+            width: 40%;
+            position: absolute;
+            right: 0;
+            border: 5px solid black;
+        }
+        .color1{
+            top: 100px;
+            background-color: #FF7F27;
+        }
+        .color2{
+            top: 150px;
+            background-color: white;
+        }
+        .color3{
+            top: 200px;
+            background-color: #B97A57;
+        }
+        .stick{
+            top: 15%;
+            right: 40%;
+            height: 85%;
+            width: 0.01px;
+        }
+        .bottom{
+            height: 25%;
+            border: 5px solid black;
+        }
+        .steps{
+            height: 20%;
+            border: 5px solid #B97A57;
+        }
+        .step1{
+            width: 30%;
+            margin-left: 40%;
+        }
+        .step2{
+            width: 50%;
+            margin-left: 30%;
+        }
+        .step3{
+            width: 70%;
+            margin-left: 20%;
+        }
+        .step4{
+            width: 90%;
+            margin-left: 8%;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="flag">
+            <div class="color color1"></div>
+            <div class="color color2"></div>
+            <div class="color color3"></div>
+            <div class="color stick"></div>
+        </div>
+        <div class="bottom">
+            <div class="steps step1"></div>
+            <div class="steps step2"></div>
+            <div class="steps step3"></div>
+            <div class="steps step4"></div>
+        </div>
+    </div>
+</body>
+</html>

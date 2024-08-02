@@ -1,0 +1,58 @@
+                                                   DATABASE TECHNICAL TASK-03
+
+
+Q3.1:i) Create a table person with following structure:-
+Ans: create table person (
+     Id int primary key,
+     name varchar(50),
+     address varchar(100)
+     ); 
+
+
+ii)Create a table account with following structure:-
+Ans: create table account (
+     Acid int primary key,
+     Bs int,
+     Hra int,
+     Da int,
+     Id int,
+     foreign key(Id) references person(Id)
+     );
+
+Q3.2:i)Insert records in person table:-
+Ans:  insert into person (id, name, address) values (1001, 'Dhirendra Singh', 'Lucknow');
+      insert into person (id, name, address) values (1002, 'Jitendra Verma', 'Sitapur');
+      insert into person (id, name, address) values (1003, 'Brijesh Mishra', 'Barabanki');
+      insert into person (id, name, address) values (1004, 'Rohit Singh', 'Bihar');
+      insert into person (id, name, address) values (1005, 'Priya Singh', 'Kanpur');
+
+   ii) Insert records in account table:-
+  Ans: insert into account (Acid, Bs, Hra, Da, Id) values (1, 20000, 5000, 10000, 1001);
+       insert into account (Acid, Bs, Hra, Da, Id) values (2, 30000, 7500, 15000, 1002);
+       insert into account (Acid, Bs, Hra, Da, Id) values (3, 40000, 10000, 20000, 1003);
+       insert into account (Acid, Bs, Hra, Da, Id) values (4, 50000, 12500, 25000, 1004);
+       insert into account (Acid, Bs, Hra, Da, Id) values (5, 40000, 10000, 20000, null);
+
+
+
+Q3.3:
+i. select name from person table, bs, hra and da from account table by performing inner join operation.
+Ans: select p.name, a.Bs, a.Hra, a.Da
+     from person p
+     inner join account a on p.Id = a.Id;
+
+ii. select name from person table, bs, hra and da from account table by performing left join operation.
+Ans: select p.name, a.Bs, a.Hra, a.Da
+     from person p
+     left join account a on p.Id = a.Id;
+
+select name from person table, bs, hra and da from account table by performing right join operation.
+Ans: select p.name, a.Bs, a.Hra, a.Da
+     from person p
+     right join account a on p.Id = a.Id;
+
+iv. select name from person table, bs, hra and da from account table by performing full join operation.
+Ans:  select p.name, a.Bs, a.Hra, a.Da
+     from person p
+     full outer join account a on p.Id = a.Id;
+

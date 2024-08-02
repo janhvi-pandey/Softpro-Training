@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Div-Task-04</title>
+    <style>
+          body{
+            display:flex;
+          
+            align-items: center;
+            justify-content: center;
+            height:100vh;
+        }
+        .outer{
+            background-color:#ABD373;
+            height: 500px;
+            width: 500px;
+            position: relative;
+            border: 3px solid black;
+        }
+        .right{
+            background-color:#00A652;
+            height: 250px;
+            width: 250px;
+            position: absolute;
+            right: 0;
+        }
+        .left{
+            background-color:#00A652;
+            height: 250px;
+            width: 250px;
+            position: absolute;
+            bottom: 0;
+        }
+        .left1{
+            background-color:#005826;
+            height: 125px;
+            width: 125px;
+            position: absolute;
+        }
+        .left2{
+            background-color:#603812;
+            height: 125px;
+            width: 125px;
+            position: absolute;
+            bottom: 0;
+        }
+        .top1{
+            background-color:#8C6238;
+            width: 125px;
+            height: 31.25px;
+            position: absolute;
+            top: 31.25px;
+        }
+        .top2{
+            background-color:#C69C6C;
+            width: 125px;
+            height: 31.25px;
+            position: absolute;
+            top: 62.50px;
+        }
+        .bottom{
+            background-color:#a67c52;
+            width: 41.6px;
+            height: 31.25px;
+            position: absolute;
+            bottom: 0;
+            left: 41.6px;
+        }
+        .right1{
+            width: 125px;
+            height: 125px;
+            background-color: #005826;
+            position: absolute;
+            right: 0;
+            bottom: 0;
+        }
+        .two{
+            width: 62.5px;
+            height: 62.5px;
+            background-color: #8EC63F;
+            position: absolute;
+            bottom: 0;
+        }
+        .three{
+            width: 62.5px;
+            height: 62.5px;
+            background-color: #82CA9B;
+            position: absolute;
+            right: 0;
+        }
+        .four{
+            width: 62.5px;
+            height: 62.5px;
+            background-color:#fff568;
+            position: absolute;
+            right: 0;
+            bottom: 0;
+        }
+        .yellow1{
+            width: 31.25px;
+            height: 31.25px;
+            background-color: #372F2D;
+            position: absolute;
+            bottom: 0;
+        }
+        .yellow2{
+            width: 31.25px;
+            height: 31.25px;
+            background-color: #372F2D;
+            position: absolute;
+            top: 0;
+            right: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="outer">
+        <div class="right"></div>
+        <div class="left">
+            <div class="left1"></div>
+            <div class="left2">
+                <div class="top1"></div>
+                <div class="top2"></div>
+                <div class="bottom"></div>
+            </div>
+            <div class="right1">
+                <div class="two"></div>
+                <div class="three"></div>
+                <div class="four">
+                    <div class="yellow1"></div>
+                    <div class="yellow2"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pattern-Task5</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .container{
+            border: 3px solid black;
+            height: 600px;
+            width: 600px;
+            position: relative;
+        }
+        .parent{
+            position: absolute;
+            height: 100%;
+        }
+        .parent1{
+            left: 0;
+            width: 40%;
+        }
+        .parent2{
+            right: 0;
+            width: 60%;
+        }
+        .left{
+            position: absolute;
+        }
+        .left1{
+            background-color: #ff0000;
+            height: 40%;
+            width: 50%;
+            left: 0;
+        }
+        .left2{
+            height: 40%;
+            background-color: #34fc0c;
+            width: 50%;
+            right: 0;
+        }
+        .left3{
+            height: 60%;
+            width: 100%;
+            background-color: #fc15a6;
+            bottom: 0;
+        }
+        .rightl{
+            position: absolute;
+            left: 0;
+            width: 50%;
+            height: 25%;
+        }
+        .rightr{
+            position: absolute;
+            right: 0;
+            width: 50%;
+            height: 25%;
+        }
+        .right1{
+            background-color: #ffe714;
+            top: 0;
+        }
+        .right2{
+            background-color: #fc15a6;
+            top: 0;
+        }
+        .right3{
+            background-color: #030303;
+            top: 25%;
+        }
+        .right4{
+            background-color: #ffe714;
+            top: 25%;
+        }
+        .right5{
+            background-color: #030303;
+            bottom: 25%;
+        }
+        .right6{
+            background-color: #2910f8;
+            bottom: 25%;
+        }
+        .right7{
+            background-color: #34fc0c;
+            bottom: 0;
+            width: 40%;
+        }
+        .right8{
+            background-color: #ff0000;
+            bottom: 0;
+            width: 60%;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="parent parent1">
+            <div class="left left1"></div>
+            <div class="left left2"></div>
+            <div class="left left3"></div>
+        </div>
+        <div class="parent parent2">
+            <div class="rightl right1"></div>
+            <div class="rightr right2"></div>
+            <div class="rightl right3"></div>
+            <div class="rightr right4"></div>
+            <div class="rightl right5"></div>
+            <div class="rightr right6"></div>
+            <div class="rightl right7"></div>
+            <div class="rightr right8"></div>
+        </div>
+    </div>
+</body>
+</html>

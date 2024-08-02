@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu Card</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f8f8;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .menu-card {
+            background-color: white;
+            width: 450px;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        fieldset {
+            border: 2px solid #333;
+            border-radius: 10px;
+            padding: 10px;
+        }
+
+        legend {
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 0 10px;
+            color: #333;
+        }
+
+        .menu-section {
+            margin-bottom: 20px;
+        }
+
+        .menu-section h2 {
+            font-size: 1.2em;
+            color: #444;
+            margin-bottom: 10px;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 5px;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        li {
+            margin-bottom: 10px; /* Adjusted spacing */
+        }
+
+        li .item-name {
+            font-weight:500;
+            color: #333;
+            width: 45%;
+            display: inline-block;
+        }
+
+        li .item-dots {
+            width: 35%;
+            text-align: center;
+            overflow: hidden;
+            display: inline-block;
+            vertical-align: middle;
+        }
+
+        li .item-price {
+            float: right;
+            font-weight: bold;
+            color: #555;
+            display: inline-block;
+        }
+
+        .clearfix::after {
+            content: "";
+            display: block;
+            clear: both;
+        }
+        h2{
+            font-weight:bolder;
+        }
+    </style>
+</head>
+<body>
+    <div class="menu-card">
+        <fieldset>
+            <legend>Our Menu</legend>
+            <div class="menu-section">
+                <h2>Appetizers</h2>
+                <ul>
+                    <li>
+                        <div class="clearfix">
+                            <span class="item-name">Cheese Pizza</span>
+                            <span class="item-dots">-----------------------</span>
+                            <span class="item-price">₹250</span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="clearfix">
+                            <span class="item-name">Garlic Bread</span>
+                            <span class="item-dots">-----------------------</span>
+                            <span class="item-price">₹120</span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="clearfix">
+                            <span class="item-name">Stuffed Mushrooms</span>
+                            <span class="item-dots">-----------------------</span>
+                            <span class="item-price">₹180</span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="clearfix">
+                            <span class="item-name">Spring Rolls</span>
+                            <span class="item-dots">-----------------------</span>
+                            <span class="item-price">₹140</span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="clearfix">
+                            <span class="item-name">Chicken Wings</span>
+                            <span class="item-dots">-----------------------</span>
+                            <span class="item-price">₹220</span>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="menu-section">
+                <h2>Main Courses</h2>
+                <ul>
+                    <li>
+                        <div class="clearfix">
+                            <span class="item-name">Grilled Salmon</span>
+                            <span class="item-dots">-----------------------</span>
+                            <span class="item-price">₹650</span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="clearfix">
+                            <span class="item-name">Spaghetti Carbonara</span>
+                            <span class="item-dots">-----------------------</span>
+                            <span class="item-price">₹450</span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="clearfix">
+                            <span class="item-name">Chicken Parmesan</span>
+                            <span class="item-dots">-----------------------</span>
+                            <span class="item-price">₹550</span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="clearfix">
+                            <span class="item-name">Paneer Butter Masala</span>
+                            <span class="item-dots">-----------------------</span>
+                            <span class="item-price">₹320</span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="clearfix">
+                            <span class="item-name">Veg Biryani</span>
+                            <span class="item-dots">-----------------------</span>
+                            <span class="item-price">₹280</span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="clearfix">
+                            <span class="item-name">Lamb Rogan Josh</span>
+                            <span class="item-dots">-----------------------</span>
+                            <span class="item-price">₹590</span>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="menu-section">
+                <h2>Desserts</h2>
+                <ul>
+                    <li>
+                        <div class="clearfix">
+                            <span class="item-name">Chocolate Lava Cake</span>
+                            <span class="item-dots">-----------------------</span>
+                            <span class="item-price">₹250</span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="clearfix">
+                            <span class="item-name">Cheesecake</span>
+                            <span class="item-dots">-----------------------</span>
+                            <span class="item-price">₹220</span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="clearfix">
+                            <span class="item-name">Tiramisu</span>
+                            <span class="item-dots">-----------------------</span>
+                            <span class="item-price">₹200</span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="clearfix">
+                            <span class="item-name">Gulab Jamun</span>
+                            <span class="item-dots">-----------------------</span>
+                            <span class="item-price">₹90</span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="clearfix">
+                            <span class="item-name">Ice Cream Sundae</span>
+                            <span class="item-dots">-----------------------</span>
+                            <span class="item-price">₹150</span>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </fieldset>
+    </div>
+</body>
+</html>

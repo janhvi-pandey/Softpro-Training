@@ -1,0 +1,63 @@
+                                  DATABASE ASSIGNMENT-01  
+                      
+Q1) Create a database "AssignDb"
+    
+Ans: CREATE DATABASE AssignDb; 
+      
+
+Q2)Connect the database "AssignDb" and create a table cust info with following structure:-
+
+Ans:  CREATE TABLE cust_info (
+      Cust_Id INT PRIMARY KEY,
+      Cust_Name VARCHAR(20),
+      Cust_Address VARCHAR(100),
+      Cust_connect_date VARCHAR(30),
+      Contact_No VARCHAR(15)
+      );
+
+
+Q3)Insert the records in cust_info table:-
+
+Ans: INSERT INTO cust_info (Cust_Id, Cust_Name, Cust_Address, Cust_connect_date, Contact_No) VALUES
+     (101, 'Rajeev Singh', 'Lucknow', '12-Dec-2012', '05226565114'),
+     (102, 'Jitendra Verma', 'Sitapur', '01-Jan-2013', '9838505980'),
+     (103, 'Ravi Singh', 'Barabanki', '15-Jan-2013', '9936652039'),
+     (104, 'Priya Singh', 'Lucknow', '16-Jan-2013', '9936390301'),
+     (105, 'Brijesh Mishra', 'Barabanki', '16-Feb-2013', '8738970899'),
+     (106, 'Amit Singh', 'Lucknow', '18-Mar-2013', '0548-2202798');
+
+Q4)Perform select operation based on following instruction:-
+
+  i)Select all record with its all fields.
+  Ans: SELECT * FROM cust_info;
+
+  ii)Select all records with its Cust_ld and Cust_Name field.
+  Ans: SELECT Cust_Id, Cust_Name FROM cust_info;
+
+  iii)Select those records in wich the Custmoer belongs from "Lucknow".
+  Ans: SELECT * FROM cust_info WHERE Cust_Address='Lucknow';
+
+  iv)Display all records of Cust_info table in ascending order on Cust_Name field.
+  Ans: SELECT * FROM cust_info ORDER BY Cust_Name ASC;
+
+  v)Display all records of Cust_info table in descending order on Cust_Name field.
+  Ans: SELECT * FROM cust_info ORDER BY Cust_Name DESC;
+
+
+
+Q5)i) Delete the record of Cust_info table having Custid 105.
+   Ans: DELETE FROM Cust_info WHERE Cust_Id=105;
+
+   ii) Update the record of Cust_info table having Cust_Id 106 (Update ContactNo with new value 0522-6767144).
+   Ans: UPDATE Cust_info SET Contact_No='05226767144' WHERE Cust_Id=106; 
+
+
+
+   iii) Perform truncate command with Cust_info table.
+   Ans: TRUNCATE TABLE Cust_info;
+
+
+
+   iv)Perform drop command to delete Cust_info table.
+   Ans: DROP TABLE Cust_info;
+

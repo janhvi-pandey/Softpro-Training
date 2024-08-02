@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task-01</title>
+    <style>
+        body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            /* height:100vh; */
+
+        }
+
+        .main {
+            height: 700px;
+            width: 1000px;
+            border: 2ox solid black;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            margin-top: 5rem;
+
+        }
+
+
+        #act {
+
+            font-size: 3rem;
+            font-weight: 200;
+            margin-bottom: 1rem;
+
+
+        }
+
+        #sign {
+
+            font-size: 1.5rem;
+            font-weight: bolder;
+            margin-bottom: 2rem;
+        }
+
+        .f {
+            height: 450px;
+            width: 420px;
+            border: 2px solid black;
+            border-radius: 8px;
+            background-color: #e2e2e2;
+            box-shadow: 0px 5px 2px 2px rgb(105, 103, 103);
+
+        }
+
+        #container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        #i1 {
+            margin: 10px;
+            border-radius: 50%;
+        }
+
+        input {
+            height: 40px;
+            width: 300px;
+            margin-bottom: 2px;
+            padding-left: 3px;
+            border-radius: 5px;
+            border: transparent;
+        }
+
+        #submit {
+            height: 40px;
+            width: 308px;
+            color: white;
+            background-color: #0080ff;
+            font-size: 1.3rem;
+            margin-top: 1.2rem;
+        }
+
+        #check {
+            justify-content: flex-start;
+            margin-left: 0.65rem;
+            height: 25px;
+            width: 30px;
+        }
+
+        #right {
+            margin-left:6rem;
+            color: #6f198b;
+            font-size: 1rem;
+
+        }
+
+        #b1 {
+            color: #6f198b;
+            font-size: 1.3rem;
+            font-weight: 600;
+            margin-bottom: 2px;
+        }
+
+        #b2 {
+            font-size: 1.4rem;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <p style="text-align: center; font-size: 4rem; margin-bottom: 10px; font-weight: 300; font-family: Tarsus;">
+            <font color="#6600ff">G</font><font color="#ff0000">o</font><font color="#ffff00">o</font><font color="#6600ff">g</font><font color="#1ab709">l</font><font color="#6600ff">e</font>
+        </p>
+
+        <p id="act">One account. All of Google.</p>
+        <p id="sign">Sign in to Continue to Gmail</p>
+        <div>
+            <form class="f">
+                <div id="container"> <img id="i1" src="profile.png" height="200px" width="200px" alt="profile">
+
+                    <input type="text" id="username" placeholder="Enter Your Name" />
+                    <input type="password" id="password" placeholder="Enter Your Password" />
+
+                    <input type="button" id="submit" value="Sign in"></input>
+
+                    <div style="display: flex; flex-direction: row; width: 78%; align-items: center;">
+
+                        <input type="checkbox" id="check" />
+                        <p>Stay signed in</p>
+                        <p id="right">Need Help?</p>
+                    </div>
+
+
+                </div>
+            </form>
+        </div>
+        <div style="display: flex; flex-direction: column; width: 78%; align-items: center;">
+            <p id="b1"> Create an account</p>
+            <p id="b2">One Google Account for everything Google</p>
+        </div>
+    </div>
+</body>
+
+</html>

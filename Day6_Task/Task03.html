@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pattern-Task3</title>
+    <style>
+      body {
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .container {
+        height: 600px;
+        width: 600px;
+        position: relative;
+        border: 3px solid black;
+      }
+      .parent {
+        height: 300px;
+        width: 300px;
+        position: absolute;
+      }
+      .parent1,
+      .child1 {
+        top: 0;
+        left: 0;
+        background-color: red;
+      }
+      .parent2,
+      .child2 {
+        top: 0;
+        right: 0;
+        background-color: blue;
+      }
+      .parent3,
+      .child3 {
+        bottom: 0;
+        left: 0;
+        background-color: blue;
+      }
+      .parent4,
+      .child4 {
+        bottom: 0;
+        right: 0;
+        background-color: red;
+      }
+      .child {
+        height: 100px;
+        width: 100px;
+        background-color: black;
+        position: absolute;
+      }
+      .center {
+        height: 60%;
+        width: 60%;
+        z-index: 1;
+        top: 20%;
+        left: 20%;
+        position: absolute;
+      }
+      .x {
+        position: absolute;
+        top: 30%;
+        height: 40%;
+        width: 100%;
+      }
+      .y {
+        position: absolute;
+        left: 30%;
+        height: 100%;
+        width: 40%;
+      }
+      .white {
+        background-color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="center">
+        <div class="white x"></div>
+        <div class="white y"></div>
+      </div>
+      <div class="parent parent1">
+        <div class="child child1"></div>
+      </div>
+      <div class="parent parent2">
+        <div class="child child2"></div>
+      </div>
+      <div class="parent parent3">
+        <div class="child child3"></div>
+      </div>
+      <div class="parent parent4">
+        <div class="child child4"></div>
+      </div>
+    </div>
+  </body>
+</html>

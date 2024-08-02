@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Div-Task-01</title>
+    <style>
+        body{
+            display:flex;
+          
+            align-items: center;
+            justify-content: center;
+            height:100vh;
+        }
+        .main{
+            height: 700px;
+            width: 699px;
+            position: relative;
+
+            border: 3px solid black;
+        }
+        .first{
+            position: absolute;
+            height: 350px;
+            width: 350px;
+        }
+        .first1{
+            top: 0;
+            left: 0;
+            background-color:#2e3192;
+        }
+        .first2{
+            top: 0;
+            right: 0;
+            background-color:#00adef;
+        }
+        .first3{
+            bottom: 0;
+            left: 0;
+            background-color: #00adef;
+        }
+        .first4{
+            bottom: 0;
+            right: 0;
+        }
+        .second{
+            position: absolute;
+            height: 175px;
+            width: 175px;
+        }
+        .second1{
+            top: 0;
+            left: 0;
+            background-color:#f36523;
+        }
+        .second2{
+            top: 0;
+            right: 0;
+            background-color:#ffff01;
+        }
+        .second3{
+            bottom: 0;
+            left: 0;
+            background-color:#ffff01;
+        }
+        .second4{
+            bottom: 0;
+            right: 0;
+        }
+        .third{
+            position: absolute;
+            height: 87.5px;
+            width: 175px;
+        }
+        .third1{
+            top: 0;
+            background-color: #005e20;
+        }
+        .third2{
+            bottom: 0;
+        }
+        .fourth{
+            position: absolute;
+            height: 87.5px;
+            width: 43.75px;
+        }
+        .fourth1{
+            left: 0;
+            background-color: #a665a4;
+        }
+        .fourth2{
+            left: 43.75px;
+            background-color:#2d3190;
+        }
+        .fourth3{
+            right: 43.75px;
+            background-color:#a665a4;
+        }
+        .fourth4{
+            right: 0;
+            background-color: #2d3190;
+        }
+
+     
+    </style>
+</head>
+
+<body>
+   
+    <div class="main container"> 
+        <div class="first container first1"></div>
+        <div class="first container first2"></div>
+        <div class="first container first3"></div>
+        <div class="first container first4">
+            <div class="second container second1"></div>
+            <div class="second container second2"></div>
+            <div class="second container second3"></div>
+            <div class="second container second4">
+                <div class="third container third1"></div>
+                <div class="third container third2">
+                    <div class="fourth container fourth1"></div>
+                    <div class="fourth container fourth2"></div>
+                    <div class="fourth container fourth3"></div>
+                    <div class="fourth container fourth4"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
