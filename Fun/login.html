@@ -3,8 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Home :: Page</title>
-    <link href="css/loginstyle.css" rel="stylesheet" />
+    <title>Login :: Page</title>
+    <link href="css/loginpg.css" rel="stylesheet" />
   </head>
   <body>
     <!-- outer->1000*1000px
@@ -41,8 +41,8 @@
       <!-- main start -->
       <main id="main">
         <div id="left">
-          <!-- login form start -->
-          <div class="login-form-container">
+           <!-- login form start -->
+           <div class="login-form-container">
             <h2>Login</h2>
             <form id="loginForm" action="login.html" method="post">
               <div class="form-group">
@@ -54,9 +54,23 @@
                 <input type="password" id="password" name="password" required />
               </div>
               <button type="submit">Login</button>
+              <div style="display: flex; flex-direction: row; width: 100%; align-items: center;">
+
+                <input type="checkbox" id="check" />
+                <p>Stay signed in</p>
+                <p style="margin-left: 12.4rem; color:rgb(52, 34, 1);">Need Help?</p>
+            </div>
             </form>
           </div>
           <!-- login form end -->
+          <div class="pagination">
+            <p id="p3p">Page 1 of 2</p>
+            <div>
+              <input type="button" class="styled-button " value="1" />
+              <input type="button" class="styled-button" value="2" />
+              <input type="button" class="styled-button active" value=">>" />
+            </div>
+          </div>
         </div>
 
         <div id="right">
@@ -69,53 +83,56 @@
             <li>Archives</li>
             <li>Website Templates</li>
           </ul>
-          <h2 class="rh2">Sponsors</h2>
+          <h2 class="rh2">Sponsores</h2>
           <p id="rp">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate
             rem deserunt libero itaque animi quisquam deleniti nam labore et.
+            Velit dolore nisi ducimus perferendis sit distinctio corrupti eos
+            eligendi nam! Officia, iure modi. Voluptas earum quas ducimus
+            consequatur!
           </p>
           <p id="rp">
             Reiciendis at reprehenderit praesentium iste eos provident esse
-            eveniet dolorum nisi ab. fuga id impedit perspiciatis? 
+            eveniet dolorum nisi ab. fuga id impedit perspiciatis? Aliquam,
+            perferendis dolorum! Obcaecati minus dolore nuluid Loreing elit.
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Atque, ab?
           </p>
         </div>
       </main>
       <!-- main end -->
-
-      <!-- footer start -->
-      <footer id="footer">
-        <div id="f1">
-          <h2 style="padding-left: 1rem">Image Gallery</h2>
-          <div class="md"><img src="css/img/Gallery.png" height="180px" width="280px"></div>
-         
-        </div>
-        <div id="f2">
-          <h2 style="padding-left: 1rem">Lorem Ipsum</h2>
-          <p
-            style="
-              padding-left: 1rem;
-              font-size: 1.2rem;
-              font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-              padding-bottom: 2rem;
-            "
-          >
-            Lorem ipsum dolor sit soluta similique natus quaerat repudiandae
-            quas praesentium quae dicta illum voluptas and fgjk ihgg and jhehg
-            xhejg quidem, et atque laborum rem perspiciatis. Placeat, vel.
-          </p>
-        </div>
-        <div id="f3" style="padding-left: 1rem">
-          <h2>Contact</h2>
-          <p style="font-size: 1.2rem; padding-bottom: 2rem">
-            Lorem ipsum dolor sit soluta similique natus quaerat repudiandae
-            quas praesentium quae dicta illum. <br /><br />
-            <a href="google.com" style="color: orange" ;>support@yoursite.com</a
-            ><br /><br />+1 123 456 789<br />+1 123 456 789<br />Address: 123
-            Template
-          </p>
-        </div>
-        <!-- Footer content goes here -->
-      </footer>
+<footer id="footer">
+ <div class="f1">
+  <h2 style="padding-left: 1rem">Image Gallery</h2>
+  <div class="md"><img src="css/img/Gallery.png" height="180px" width="280px"></div>
+ </div>
+ <div class="f2">
+  <h2 style="padding-left: 1rem">Lorem Ipsum</h2>
+  <p
+    style="
+      padding-left: 1rem;
+      font-size: 1rem;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      padding-bottom: 2rem;
+      align-content: center;
+    "
+  >
+    Lorem ipsum dolor sit soluta similique natus quaeratetd sdtgtsd repudiandae
+    quasdtrdy dstg praesentiu fgg hgvghj vhj hjgbhj bnm quae dicta fgjk ihgg and jhehg
+    xhejg quidem, et atque laborum rem perspiciatis. Placeat, vel.
+  </p>
+ </div>
+ <div class="f3">
+  <h2 >Contact</h2>
+  <p style="font-size: 1.2rem;">
+    Lorem ipsum dolor sit soluta similiqat repudiansentilum.</p>
+    <p><a href="google.com" style="color: orange" ;>support@yoursite.com</a></p> 
+  <p> +1 123 456 789<br />+1 123 456 789</p>
+  <p>Address: 123 Template</p>
+  
+ </div>
+</footer>
+      
+       
       <!-- footer end -->
     </div>
     <!-- outer end -->

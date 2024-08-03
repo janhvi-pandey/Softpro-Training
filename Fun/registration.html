@@ -1,111 +1,147 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Registration</title>
-    <link href="css/registrationstyle.css" rel="stylesheet">
-</head>
-<body>
-    <!-- outer start -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registration :: Page</title>
+    <link href="css/registrationstyle.css" rel="stylesheet" />
+  </head>
+  <body>
+    <!-- outer->1000*1000px
+     nav->50*1000+5px margin-bottom
+     slider->200*1000px  + 5px margin-bottom
+     main->480*1000px+10px mb
+     footer->250*1000px -->
+
+    <!--outer start-->
     <div id="outer">
-        <!-- nav start -->
-        <nav id="nav">
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="login.html">Login</a></li>
-                <li><a href="registration.html" class="active-nav">Registration</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
-        <!-- nav end -->
+      <!-- nav start -->
+      <nav id="nav">
+        <ul>
+          <li><a href="index.html" class="active-nav">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="login.html">Login</a></li>
+          <li><a href="registration.html">Registration</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <!-- nav end -->
 
-        <!-- slider start -->
-        <div id="slider">
-            <img src="./css/img/slider.png" alt="Slider" height="100%" width="100%">
+      <!-- slider start -->
+      <div id="slider">
+        <img
+          src="./css/img/slider.png"
+          alt="Slider"
+          height="100%"
+          width="100%"
+        />
+      </div>
+      <!-- slider end -->
+
+      <!-- main start -->
+      <main id="main">
+        <div id="left">
+            <div class="form-container">
+                <h2>Registration</h2>
+                <form id="registrationForm" action="registration.html" method="post">
+                    <div class="form-group">
+                        <label for="username">Username:</label>
+                        <input type="text" id="username" name="username" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="password">Password:</label>
+                        <input type="password" id="password" name="password" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="confirm_password">Confirm Password:</label>
+                        <input type="password" id="confirm_password" name="confirm_password" required>
+                    </div>
+                    <button type="submit">Register</button>
+                    <div style="display: flex; flex-direction: row; width: 100%; align-items: center;">
+
+                        <input type="checkbox" id="check" />
+                        <p style="font-size: 1.5rem;">Already registered</p>
+                        <p style="margin-left: 15.6rem; color:rgb(6, 6, 6); font-size: 1.5rem;">Need Help?</p>
+                    </div>
+                </form>
+            </div>
+            <!-- registration form end -->
+          <div class="pagination">
+            <p id="p3p">Page 1 of 2</p>
+            <div>
+              <input type="button" class="styled-button " value="1" />
+              <input type="button" class="styled-button" value="2" />
+              <input type="button" class="styled-button active" value=">>" />
+            </div>
+          </div>
         </div>
-        <!-- slider end -->
 
-        <!-- main start -->
-        <main id="main">
-            <div id="left">
-                <!-- registration form start -->
-                <div class="form-container">
-                    <h2>Registration</h2>
-                    <form id="registrationForm" action="registration.html" method="post">
-                        <div class="form-group">
-                            <label for="username">Username:</label>
-                            <input type="text" id="username" name="username" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="email">Email:</label>
-                            <input type="email" id="email" name="email" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="password">Password:</label>
-                            <input type="password" id="password" name="password" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="confirm_password">Confirm Password:</label>
-                            <input type="password" id="confirm_password" name="confirm_password" required>
-                        </div>
-                        <button type="submit">Register</button>
-                    </form>
-                </div>
-                <!-- registration form end -->
-            </div>
-
-            <div id="right">
-                <h2 class="rh2">Sidebar Menu</h2>
-                <ul>
-                    <li>Home</li>
-                    <li>Templateinfo</li>
-                    <li>Styledemo</li>
-                    <li>Blog</li>
-                    <li>Archives</li>
-                    <li>Website Templates</li>
-                </ul>
-                <h2 class="rh2">Sponsors</h2>
-                <p id="rp">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate
-                    rem deserunt libero itaque animi quisquam deleniti nam labore et.
-                </p>
-                <p id="rp">
-                    Reiciendis at reprehenderit praesentium iste eos provident esse
-                    eveniet dolorum nisi ab. fuga id impedit perspiciatis? 
-                </p>
-            </div>
-        </main>
-        <!-- main end -->
-
-        <!-- footer start -->
-        <footer id="footer">
-            <div id="f1">
-                <h2 style="padding-left: 1rem">Image Gallery</h2>
-                <div class="md"><img src="css/img/Gallery.png" height="180px" width="280px"></div>
-            </div>
-            <div id="f2">
-                <h2 style="padding-left: 1rem">Lorem Ipsum</h2>
-                <p style="padding-left: 1rem; font-size: 1.2rem; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; padding-bottom: 2rem;">
-                    Lorem ipsum dolor sit soluta similique natus quaerat repudiandae
-                    quas praesentium quae dicta illum voluptas and fgjk ihgg and jhehg
-                    xhejg quidem, et atque laborum rem perspiciatis. Placeat, vel.
-                </p>
-            </div>
-            <div id="f3" style="padding-left: 1rem">
-                <h2>Contact</h2>
-                <p style="font-size: 1.2rem; padding-bottom: 2rem">
-                    Lorem ipsum dolor sit soluta similique natus quaerat repudiandae
-                    quas praesentium quae dicta illum. <br><br>
-                    <a href="google.com" style="color: orange">support@yoursite.com</a>
-                    <br><br>+1 123 456 789<br>+1 123 456 789<br>Address: 123 Template
-                </p>
-            </div>
-            <!-- Footer content goes here -->
-        </footer>
-        <!-- footer end -->
+        <div id="right">
+          <h2 class="rh2">Sidebar Menu</h2>
+          <ul>
+            <li>Home</li>
+            <li>Templateinfo</li>
+            <li>Styledemo</li>
+            <li>Blog</li>
+            <li>Archives</li>
+            <li>Website Templates</li>
+          </ul>
+          <h2 class="rh2">Sponsores</h2>
+          <p id="rp">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate
+            rem deserunt libero itaque animi quisquam deleniti nam labore et.
+            Velit dolore nisi ducimus perferendis sit distinctio corrupti eos
+            eligendi nam! Officia, iure modi. Voluptas earum quas ducimus
+            consequatur!
+          </p>
+          <p id="rp">
+            Reiciendis at reprehenderit praesentium iste eos provident esse
+            eveniet dolorum nisi ab. fuga id impedit perspiciatis? Aliquam,
+            perferendis dolorum! Obcaecati minus dolore nuluid Loreing elit.
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Atque, ab?
+          </p>
+        </div>
+      </main>
+      <!-- main end -->
+<footer id="footer">
+ <div class="f1">
+  <h2 style="padding-left: 1rem">Image Gallery</h2>
+  <div class="md"><img src="css/img/Gallery.png" height="180px" width="280px"></div>
+ </div>
+ <div class="f2">
+  <h2 style="padding-left: 1rem">Lorem Ipsum</h2>
+  <p
+    style="
+      padding-left: 1rem;
+      font-size: 1rem;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      padding-bottom: 2rem;
+      align-content: center;
+    "
+  >
+    Lorem ipsum dolor sit soluta similique natus quaeratetd sdtgtsd repudiandae
+    quasdtrdy dstg praesentiu fgg hgvghj vhj hjgbhj bnm quae dicta fgjk ihgg and jhehg
+    xhejg quidem, et atque laborum rem perspiciatis. Placeat, vel.
+  </p>
+ </div>
+ <div class="f3">
+  <h2 >Contact</h2>
+  <p style="font-size: 1.2rem;">
+    Lorem ipsum dolor sit soluta similiqat repudiansentilum.</p>
+    <p><a href="google.com" style="color: orange" ;>support@yoursite.com</a></p> 
+  <p> +1 123 456 789<br />+1 123 456 789</p>
+  <p>Address: 123 Template</p>
+  
+ </div>
+</footer>
+      
+       
+      <!-- footer end -->
     </div>
     <!-- outer end -->
-</body>
+  </body>
 </html>

@@ -3,7 +3,7 @@ body {
   }
   
   #outer {
-    height: 1600px;
+    height: 1500px;
     width: 1000px;
     border: 1px solid orange;
     margin: 100px auto;
@@ -27,7 +27,7 @@ body {
   #nav > ul > li {
     display: inline-block;
     margin: 0px 20px;
-    padding: 5px 10px;
+    padding: 0px 10px;
     width: 80px;
     text-align: center;
     transition: 1s ease;
@@ -51,6 +51,8 @@ body {
   .active-nav{
     color: orange;
   }
+  
+  
   #slider {
     height: 200px;
     width: 1000px;
@@ -61,10 +63,12 @@ body {
   
   /* main section */
   #main {
-    height: 880px;
+    height: 915px;
     width: 1000px;
-    margin-bottom: 10px;
+    margin-bottom: 0px;
     background-color: orange;
+   
+    margin-bottom: 1.2rem;
   }
   
   /* left section */
@@ -73,11 +77,8 @@ body {
     padding-left: 3rem;
     padding-top: 2rem;
     padding-bottom: 0.3rem;
-    margin-bottom: 2.6px;
+    margin-bottom: 2.8px;
     
-  }
-  .content{
-    font-size: 17px;
   }
   .pagination{
     display:flex;
@@ -99,45 +100,23 @@ body {
     color: white;
   }
   
-  .parent1 {
-    display: flex;
-    flex-direction: column;
+  
+  .content{
+    font-size: 1.1rem;
     justify-content: left;
-    padding-left: 2rem;
-    background-color: white;
-    padding-top: 20px;
   }
   
-  .parent2 {
-    display: flex;
-    flex-direction: column;
-    justify-content: left;
-    padding-left: 2rem;
-    background-color: white;
-    padding-top: 20px;
-    margin-top: 3px;
-  }
   
-  .parent3 {
-    display: flex;
-    flex-direction: row;
-    justify-content: left;
-    align-items: center; /* Vertically align items */
-    padding-left: 2rem;
-    background-color: white;
-    margin-top: 2px;
-    border-radius: 0px 0px 0px 30px;
-  }
   #p3p {
     color: orange;
     text-decoration: underline;
-    font-size: 1.1rem;
+    font-size: 1.175rem;
     margin-right: 20rem;
     padding-left: 3rem;
   }
   
   #left {
-    height: 880px;
+    height: 915px;
     width: 700px;
     float: left;
     background-color: orange;
@@ -147,7 +126,7 @@ body {
   
   /* right */
   #right {
-    height: 880px;
+    height: 914px;
     width: 300px;
     background-color: rgb(247, 196, 102);
     float: left;
@@ -156,6 +135,8 @@ body {
   .rh2{
     padding-top: 1rem;
     padding-left: 2rem;
+    font-size: 1.5rem;
+    font-weight: bolder;
   }
   #right>ul{
     list-style-type: none;
@@ -166,7 +147,7 @@ body {
   }
   #rp{
     padding-left: 2rem;
-    font-size: 1.2rem;
+    font-size: 1.17rem;
     padding-right: 1rem;
   }
   
@@ -174,50 +155,41 @@ body {
   
   
   /* Footer */
-  #footer {
-    height: 350px;
+  
+  
+  
+   #footer {
+    height: 300px;
     width: 1000px;
-    
-    margin-bottom: 10px;
+    background-color: white;
+    border:1 px solid black;
     border-radius: 30px;
     background-color: white;
     display: flex;
     flex-direction: row;
     align-items: center;
-  }
-  #f1{
+   }
+  
+  .f1{
     padding-left:1rem;
     height:250px;
     width:300px;
     margin:1rem;
+    
   }
   
-  #f2{
+  .f2{
     height:250px;
     width:300px;
     padding-left:1.5rem;
     margin:1rem;
+    
   }
-  #f3{
+  .f3{
     height:250px;
     width:300px;
-    padding-left:2rem;
+    padding-left:4rem;
     margin:1rem;
+    
   }
-  .md{
-    height:180px;
-    width:280px;
-    margin:1rem;
-    border: transparent;
-    position:relative;
   
-  }
-  /* .m{
-    height:50px;
-    padding: 5%;
-    margin-left: 9px;
-    margin-top: 5px;
-    width:50px;
-    display:inline-block;
-    border:1px solid black;
-  } */
