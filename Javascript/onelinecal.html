@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function cal(){
+           let a= document.getElementById('num1').value;
+           let b=eval(a);
+           document.getElementById('res').innerHTML=b;
+           document.getElementById('num1').value="";
+        
+        }
+    </script>
+</head>
+<body>
+   <h1>Simple Calculator</h1>
+    <br/>
+    Enter your problem:
+    <input type="text" id="num1" />
+    <input type="button" id="btn1" value="=" onClick="cal()"/>
+    <br/><br/>
+    <span >Result: </span>
+    <span id="res"></span>
+</body>
+</html>

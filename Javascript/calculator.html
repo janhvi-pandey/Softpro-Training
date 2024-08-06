@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator</title>
+    <script>
+      window.alert("Hello");
+      function add() {
+        // window.alert("Inside Function");
+        let a=document.getElementById('n1').value;
+        let b=document.getElementById('n2').value;
+        let c=parseInt(a)+parseInt(b);
+        window.alert("Addition is"+c);
+        console.log(c);
+        document.getElementById('res').innerHTML="<b>"+c+"</b>";
+
+      }
+      function subtract() {
+        // window.alert("Inside Function");
+        let a=document.getElementById('n1').value;
+        let b=document.getElementById('n2').value;
+        let c=parseInt(a)-parseInt(b);
+       
+        document.getElementById('res').innerHTML="<b>"+c+"</b>";
+
+      }
+      //innerTEXT-->to show tag
+      //innerHTML-->To show effect of tag
+    </script>
+  </head>
+  <body>
+    <input type="number" id="n1" placeholder="Enter first number" />
+    <br/><br/>
+    <input type="number" id="n2" placeholder="Enter second number"/>
+    <br/><br/>
+    <input type="button" value="Add" onClick="add()" />
+    <input type="button" value="Subtract" onClick="subtract()" />
+    <br/><br/>
+    <span >Result: </span>
+    <span id="res"></span>
+    <!-- <input type="number" id="res" readonly/> -->
+  </body>
+</html>

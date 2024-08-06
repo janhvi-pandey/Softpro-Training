@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Validation</title>
+    <script>
+      function valid(){
+       let a=document.getElementById('n1').value;
+       let b=document.getElementById('n2').value;
+       if(a==""){
+        window.alert("Please enter your name");
+       }
+       else if(b==""){
+        window.alert("Please enter your number")
+       }
+       else if(b.length!=10){                //length validation
+        window.alert("Invalid number");
+       }
+       else{
+        window.alert("Valid name & number");
+       }
+
+        }
+    </script>
+</head>
+<body>
+    REQUIRED VALIDATION
+    <br><br>
+        Enter your name:
+        <input tyoe="text" id='n1' name="name"/>
+     
+        <br><br>
+        Enter your number:
+        <input tyoe="number" id='n2' name="name"/>
+        <br>
+        <br>
+        <input type="button" value="Valid" onClick="valid()"/>
+</body>
+</html>
