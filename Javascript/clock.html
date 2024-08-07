@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CLOCK</title>
+  </head>
+  <body>
+    <h1 id="ind"></h1>
+    <script>
+      function clock() {
+        let d = new Date();
+        console.log(d);
+        let indtime = d.toLocaleTimeString("en-US", {
+          "timeZone": "Asia/Kolkata",
+        }); //requires 2 params & stored in key-value param
+        console.log(indtime);
+        document.getElementById("ind").innerHTML = "<u>" + indtime;
+      }
+      clock();
+
+      // to prevent refresh multiple times
+      //   setInterval(clock, 1000);{func name,time interval}
+    </script>
+  </body>
+</html>

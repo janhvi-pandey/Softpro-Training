@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pattern-Validation</title>
+    <script>
+      function valid() {
+        let a = document.getElementById("n1").value;
+        let b = document.getElementById("n2").value;
+        let c = document.getElementById("n3").value;
+        let d = document.getElementById("n4").value;
+        let p = /^[a-z A-Z]{3,35}$/;
+        let n = /^[6-9][0-9]{9}$/;
+        let e = /^[a-z][a-z0-9_.-]+@[a-z]+\.[a-z]{2,3}$/;
+        let pass = /^[a-zA-z0-9 _@#$%&.,]{8,}$/;
+
+        if (!p.test(a)) {
+          window.alert("InValid Name");
+        } else if (!n.test(b)) {
+          window.alert("InValid Number");
+        } else if (!e.test(c)) {
+          window.alert("InValid Email");
+        } else if (!pass.test(d)) {
+          window.alert("InValid password");
+        } else {
+          window.alert("Valid");
+        }
+      }
+
+      function sh(v){
+        if(v=="Show"){
+            document.getElementById("n4").type="text";
+            document.getElementById("s").value="Hide";
+
+        }
+        else{
+            document.getElementById("n4").type="password";
+            document.getElementById("s").value="Show";
+
+        }
+       
+      }
+    </script>
+  </head>
+  <body>
+    PATTERN VALIDATION
+    <br /><br />
+    Enter your name:<br />
+    <input type="text" id="n1" placeholder="Enter your name" name="name" />
+
+    <br /><br />
+    Enter your number:<br />
+    <input type="text" id="n2" placeholder="Enter your number" name="num" />
+
+    <br /><br />
+    Enter your email:<br />
+    <input type="text" id="n3" placeholder="Enter your email" name="email" />
+
+    <br /><br />
+    Enter your password:<br />
+    <input
+      type="password"
+      id="n4"
+      placeholder="Enter your password"
+      name="password"
+    />
+    <input type="button" id="s" value="Show" onClick="sh(value)" />
+
+    <br /><br />
+    <input type="button" value="Valid" onClick="valid()" />
+  </body>
+</html>
