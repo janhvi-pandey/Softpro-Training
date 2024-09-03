@@ -57,14 +57,24 @@ app.get('/:id',async(req,res)=>{
 
 })
 app.patch('/:id',async(req,res)=>{
-    const id=req.params.id;
+  try {
+     const id=req.params.id;
     const result= await Emp.findByIdAndUpdate(id,req.body);
     return res.send({msg:"Sucess"});
+  } catch (error) {
+    return res.send({msg:"Error"});
+  }
+   
 })
 app.delete('/:id',async(req,res)=>{
+  try {
     const id=req.params.id;
     const result= await Emp.findByIdAndDelete(id);
     return res.send({msg:"Sucess"});
+  } catch (error) {
+    return res.send({msg:error});
+  }
+    
 })
 app.listen(5001, () => {
   console.log("Server Running on 5001");

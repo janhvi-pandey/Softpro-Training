@@ -6,6 +6,7 @@ import Register from "./components/Register";
 import Showall from "./components/Showall";
 import {BrowserRouter,Route,Routes} from 'react-router-dom';
 import View from "./components/View";
+import Edit from "./components/Edit";
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
         <Route exact path='/' element={<Register/>}/>
         <Route exact path='/showall' element={<Showall/>}/>
         <Route exact path='/view/:id' element={<View/>}/>
+        <Route exact path='/edit/:id' element={<Edit/>}/>
       </Routes>
       </BrowserRouter>
    
